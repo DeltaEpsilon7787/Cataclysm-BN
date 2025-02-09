@@ -140,7 +140,7 @@ struct RouteSettings {
     float alpha = 1.0;
 
     unsigned int rank_weighted_rng( const unsigned int n ) const {
-        assert(-1. <= this->alpha && this->alpha <= 1. );
+        assert( -1. <= this->alpha && this->alpha <= 1. );
 
         // Trivial cases
         if( this->alpha >= 1. ) {
